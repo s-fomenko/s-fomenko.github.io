@@ -1,0 +1,12 @@
+body {
+  font-size: 22.43px;
+  line-height: 49.83px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  /* TODO: Добавить Courier New */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

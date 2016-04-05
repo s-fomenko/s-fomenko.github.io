@@ -2,12 +2,159 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Заголовок страницы</title>
+    <title>CSSSR</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- Основная разметка -->
+    <div class="site-wrapper">
+      <header class="main-header clearfix">
+        <div class="main-logo">
+          <img class="main-logo-img" src="./img/logo.png" alt="CSSSR" width="154" height="52">
+          <span class="main-logo-text">Секретный архив учреждения</span>
+        </div>
+        <img class="secret" src="./img/secret.png" alt="Top Secret" width="252" height="106">
+      </header>
+      <div class="content-wrapper">
+        <main class="main-content">
+          <div class="content-header">
+            <img src="./img/header.png" alt="Header" width="221" height="118">
+          </div>
+          <div class="info">
+            <div class="info-item">
+              <span>Полное ФИО</span>
+              <span>Фоменко Сергей Владимирович</span>
+            </div>
+            <div class="info-item">
+              <span>Год рождения</span>
+              <span>1980</span>
+            </div>
+            <div class="info-item">
+              <span>Место жительства</span>
+              <span>г. Санкт-Петербург, Россия</span>
+            </div>
+            <div class="info-item">
+              <span>Скайп</span>
+              <span>sv.fomenko</span>
+            </div>
+            <div class="info-item">
+              <span>Почта</span>
+              <span>fomenko.personal@gmail.com</span>
+            </div>
+            <form class="htmlacademy" action="#" method="post">
+              <legend class="htmlacademy-select">
+                Выпускник
+                <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+              </legend>
+              <div class="htmlacademy-select-item">
+                <input id="select1" type="radio" name="graduate" value="yes" checked>
+                <label for="select1">Да</label>
+              </div>
+              <div class="htmlacademy-select-item">
+                <input id="select2" type="radio" name="graduate" value="no">
+                <label for="select2">Нет</label>
+              </div>
+            </form>
+          </div>
+          <div class="skills">
+            <form class="skills-select" action="#" method="post">
+              <legend class="skills-text">
+                <div class="skills-text-header">
+                  Практические навыки
+                </div>
+                <span class="skills-text-description">*Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</span>
+              </legend>
+              <div class="skills-select-block">
+                <div class="skills-select-item">
+                  <input id="skills1" type="checkbox" name="skills" value="bem">
+                  <label for="skills1">Методология БЭМ</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills2" type="checkbox" name="skills" value="jquery">
+                  <label for="skills2">JQuery</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills3" type="checkbox" name="skills" value="grunt">
+                  <label for="skills3">Использую GRUNT</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills4" type="checkbox" name="skills" value="haml">
+                  <label for="skills4">HAML</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills5" type="checkbox" name="skills" value="sass">
+                  <label for="skills5">SASS</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills6" type="checkbox" name="skills" value="less">
+                  <label for="skills6">LESS</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills7" type="checkbox" name="skills" value="coffeescript">
+                  <label for="skills7">CoffeeScript</label>
+                </div>
+              </div>
+              <div class="skills-select-block">
+                <div class="skills-select-item">
+                  <input id="skills8" type="checkbox" name="skills" value="jade">
+                  <label for="skills8">Jade</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills9" type="checkbox" name="skills" value="stylus">
+                  <label for="skills9">Stylus</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills10" type="checkbox" name="skills" value="angular">
+                  <label for="skills10">Знаю (изучаю) Angular</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills11" type="checkbox" name="skills" value="android">
+                  <label for="skills11">Верстка под Android</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills12" type="checkbox" name="skills" value="ios">
+                  <label for="skills12">Верстка под iOS</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills13" type="checkbox" name="skills" value="wp">
+                  <label for="skills13">Верстка под Windows Phone</label>
+                </div>
+              </div>
+              <div class="skills-select-block">
+                <div class="skills-select-item">
+                  <input id="skills14" type="checkbox" name="skills" value="mail">
+                  <label for="skills14">Верстка рассылок</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills15" type="checkbox" name="skills" value="adaptive">
+                  <label for="skills15">Адаптивная верстка</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills16" type="checkbox" name="skills" value="dropbox" checked>
+                  <label for="skills16">Использую Dropbox</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills17" type="checkbox" name="skills" value="gmail" checked>
+                  <label for="skills17">Использую Gmail</label>
+                </div>
+                <div class="skills-select-item">
+                  <input id="skills18" type="checkbox" name="skills" value="github" checked>
+                  <label for="skills18">Использую GitHub</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="slider">
+            <!-- TODO: Сделать слайдер -->
+          </div>
+          <div class="date">
+            <span>Дата заполнения</span>
+            <span>Поставить дату</span>
+          </div>
+        </main>
+      </div>
+    </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>
