@@ -1,14 +1,16 @@
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 21px;
   line-height: 25px;
-  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+
   background-color: #797979;
 }
 
 .site-wrapper {
   width: 1001px;
   margin: 0 auto;
+
   background-image: url("../img/background.jpg");
 }
 
@@ -19,59 +21,67 @@ body {
 
 .clearfix::after {
   content: "";
+
   display: table;
   clear: both;
 }
 
 /*=====Sprite=====*/
 .sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    display: block;
+  display: block;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
 }
 
 .sprite-checkbox-off {
-    width: 24px;
-    height: 28px;
-    background-position: -10px -10px;
+  width: 24px;
+  height: 28px;
+
+  background-position: -10px -10px;
 }
 
 .sprite-checkbox-on {
-    width: 24px;
-    height: 28px;
-    background-position: -10px -58px;
+  width: 24px;
+  height: 28px;
+
+  background-position: -10px -58px;
 }
 
 .sprite-radio-off {
-    width: 41px;
-    height: 45px;
-    background-position: -10px -106px;
+  width: 41px;
+  height: 45px;
+
+  background-position: -10px -106px;
 }
 
 .sprite-radio-on {
-    width: 41px;
-    height: 45px;
-    background-position: -10px -171px;
+  width: 41px;
+  height: 45px;
+
+  background-position: -10px -171px;
 }
 
 .sprite-triangle {
-    width: 17px;
-    height: 14px;
-    background-position: -10px -236px;
+  width: 17px;
+  height: 14px;
+
+  background-position: -10px -236px;
 }
 
 /*=====Header=====*/
 .main-header {
-  padding-top: 47px;
-  padding-left: 46px;
-  padding-right: 54px;
   margin-bottom: 31px;
+  padding-top: 47px;
+  padding-right: 54px;
+  padding-left: 46px;
 }
 
-.main-logo{
+.main-logo {
+  position: relative;
+
   float: left;
   width: 240px;
-  position: relative;
 }
 
 .main-logo-img {
@@ -79,13 +89,14 @@ body {
 }
 
 .main-logo-text {
-  color: #2f1b15;
-  font-size: 10px;
-  line-height: 14px;
-  font-weight: 400;
   position: absolute;
   top: 60px;
   left: 6px;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #2f1b15;
 }
 
 .secret {
@@ -95,8 +106,8 @@ body {
 
 /*=====Main=====*/
 .content-header {
-  margin: 0 auto;
   width: 262px;
+  margin: 0 auto;
   margin-bottom: 47px;
 }
 
@@ -105,51 +116,58 @@ body {
 }
 
 .info-item {
+  margin-bottom: 13px;
+
   font-size: 0;
+
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
-  background-position-y: 15px;
   background-position-x: 8px;
-  margin-bottom: 13px;
+  background-position-y: 15px;
 }
 
 .info-item-title {
+  display: inline-block;
+  height: 36px;
+  padding-top: 13px;
+  padding-right: 15px;
+
+  font-weight: 700;
   font-size: 22.43px;
   line-height: 38.83px;
-  font-weight: 700;
-  color: #2f1b15;
-  display: inline-block;
   vertical-align: top;
+  color: #2f1b15;
+
   background-image: url("../img/background.jpg");
-  height: 36px;
-  padding-right: 15px;
-  padding-top: 13px;
 }
 
 .info-item-text {
-  font-family: "Courier New", "Courier", monospace;
+  display: inline-block;
+  padding-left: 15px;
+
+  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 400;
-  color: #231f20;
-  display: inline-block;
+  font-family: "Courier New", "Courier", monospace;
   vertical-align: top;
-  padding-left: 15px;
+  color: #231f20;
 }
 
 .htmlacademy {
-  font-size: 0;
   padding-top: 24px;
+
+  font-size: 0;
 }
 
 .htmlacademy-select {
   display: inline-block;
-  vertical-align: top;
+  margin-right: 51px;
+
+  font-weight: 700;
   font-size: 22.43px;
   line-height: 36px;
+  vertical-align: top;
   color: #2f1b15;
-  font-weight: 700;
-  margin-right: 51px;
 }
 
 .htmlacademy-select a {
@@ -158,13 +176,14 @@ body {
 
 .htmlacademy-select-item {
   display: inline-block;
-  vertical-align: top;
-  font-size: 22px;
-  line-height: 36px;
-  color: #2f1b15;
-  font-weight: 700;
   margin-right: 37px;
   padding-top: 2px;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
+  vertical-align: top;
+  color: #2f1b15;
 }
 
 input[type="radio"] {
@@ -173,8 +192,10 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   position: relative;
+
   display: block;
   padding-left: 16px;
+
   cursor: pointer;
 }
 
@@ -183,20 +204,23 @@ input[type="radio"] + label::before {
   position: absolute;
   top: -4px;
   left: -22px;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+
   display: block;
   width: 41px;
   height: 45px;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -106px;
 }
 
 input[type="radio"]:checked + label::before {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
   display: block;
   width: 41px;
   height: 45px;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -171px;
 }
 
@@ -206,34 +230,38 @@ input[type="radio"]:checked + label::before {
 
 .skills-text {
   position: relative;
+
   margin-bottom: 22px;
 }
 
 .skills-text-header {
+  font-weight: 700;
   font-size: 22.43px;
   line-height: 43.83px;
-  font-weight: 700;
   color: #2f1b15;
 }
 
 .skills-text-description {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #3d3d3d;
   margin: 0;
   padding-left: 19px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3d3d3d;
 }
 
 .skills-text-description::before {
   content: "";
-  display: block;
   position: absolute;
-  background-image: url("../img/snow.png");
   top: 51px;
   left: 1px;
+
+  display: block;
   width: 11px;
   height: 9px;
+
+  background-image: url("../img/snow.png");
 }
 
 .skills-select-block {
@@ -251,8 +279,8 @@ input[type="radio"]:checked + label::before {
 }
 
 .skills-select-item {
-  padding-left: 14px;
   padding-bottom: 10px;
+  padding-left: 14px;
 }
 
 input[type="checkbox"] {
@@ -261,8 +289,10 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   position: relative;
+
   display: block;
   padding-left: 15px;
+
   cursor: pointer;
 }
 
@@ -271,20 +301,23 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: -5px;
   left: -13px;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+
   display: block;
   width: 24px;
   height: 28px;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -10px;
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
   display: block;
   width: 24px;
   height: 28px;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -58px;
 }
 
@@ -294,33 +327,37 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slider-title {
-  font-size: 22.43px;
-  line-height: 49.83px;
-  font-weight: 700;
-  color: #2f1b15;
   margin: 0;
   margin-bottom: 31px;
   padding-left: 11px;
+
+  font-weight: 700;
+  font-size: 22.43px;
+  line-height: 49.83px;
+  color: #2f1b15;
 }
 
 .slider-scale {
+  height: 33px;
+
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 33px;
 }
 
 .slider-marker::before {
   content: "";
   position: absolute;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  top: 63px;
+  left: 7px;
+
   display: block;
   width: 17px;
   height: 14px;
+
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -236px;
-  top: 63px;
-  left: 7px;
   cursor: pointer;
 }
 
@@ -329,91 +366,105 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slider-points-item1::before {
+  content: "";
   position: absolute;
+  top: -32px;
+  left: 14px;
+
   display: block;
   width: 2px;
   height: 23px;
+
   background-color: #3f241e;
-  content: "";
-  top: -32px;
-  left: 14px;
 }
 
 .slider-points-item2::before {
+  content: "";
   position: absolute;
+  top: -32px;
+  left: 162px;
+
   display: block;
   width: 2px;
   height: 10px;
+
   background-color: #3f241e;
-  content: "";
-  top: -32px;
-  left: 162px;
 }
 
 .slider-points-item3::before {
+  content: "";
   position: absolute;
+  top: -32px;
+  left: 387px;
+
   display: block;
   width: 2px;
   height: 10px;
+
   background-color: #3f241e;
-  content: "";
-  top: -32px;
-  left: 387px;
 }
 
 .slider-points-item4::before {
+  content: "";
   position: absolute;
+  top: -32px;
+  left: 770px;
+
   display: block;
   width: 2px;
   height: 23px;
+
   background-color: #3f241e;
-  content: "";
-  top: -32px;
-  left: 770px;
 }
 
 .slider-text {
   position: relative;
+
+  margin-bottom: 70px;
+
+  font-weight: 700;
   font-size: 13px;
   line-height: 19px;
-  font-weight: 700;
   color: #2f1b15;
-  margin-bottom: 70px;
 }
 
 .slider-text-item1 {
-  margin: 0;
   position: absolute;
   top: -3px;
   left: 13px;
+
+  margin: 0;
 }
 
 .slider-text-item2 {
-  margin: 0;
   position: absolute;
   top: -5px;
   left: 158px;
+
+  margin: 0;
 }
 
 .slider-text-item3 {
-  margin: 0;
   position: absolute;
   top: -5px;
   left: 385px;
+
   width: 176px;
+  margin: 0;
 }
 
 .slider-text-item4 {
-  margin: 0;
   position: absolute;
   top: 2px;
   left: 639px;
+
+  margin: 0;
 }
 
 /*=====Footer=====*/
 .main-footer {
-  padding-bottom: 64px;
   padding-top: 10px;
+  padding-bottom: 64px;
 }
 
 .date {
@@ -421,26 +472,29 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .date-item1 {
+  display: inline-block;
+  padding-top: 6px;
+
+  font-weight: 700;
   font-size: 22.43px;
   line-height: 49.83px;
-  font-weight: 700;
-  color: #2f1b15;
-  display: inline-block;
   vertical-align: top;
-  padding-top: 6px;
+  color: #2f1b15;
 }
 
 .date-item2 {
-  font-family: "Courier New", "Courier", monospace;
+  display: inline-block;
+  padding: 0 15px;
+  padding-bottom: 10px;
+
+  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 400;
-  color: #231f20;
-  display: inline-block;
+  font-family: "Courier New", "Courier", monospace;
   vertical-align: top;
+  color: #231f20;
+
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
   background-position-y: 10px;
-  padding: 0 15px;
-  padding-bottom: 10px;
 }
