@@ -4,7 +4,6 @@ body {
   line-height: 25px;
   font-weight: 700;
   background-color: #797979;
-  /* TODO: Добавить Courier New */
 }
 
 .site-wrapper {
@@ -14,7 +13,7 @@ body {
 }
 
 .content-wrapper {
-  width: 771px;
+  width: 782px;
   margin: 0 auto;
 }
 
@@ -63,15 +62,20 @@ body {
 
 /*=====Header=====*/
 .main-header {
-  padding-top: 46px;
-  padding-left: 48px;
-  padding-right: 55px;
-  margin-bottom: 35px;
+  padding-top: 47px;
+  padding-left: 46px;
+  padding-right: 54px;
+  margin-bottom: 31px;
 }
 
 .main-logo{
   float: left;
   width: 240px;
+  position: relative;
+}
+
+.main-logo-img {
+  padding-top: 14px;
 }
 
 .main-logo-text {
@@ -79,6 +83,9 @@ body {
   font-size: 10px;
   line-height: 14px;
   font-weight: 400;
+  position: absolute;
+  top: 60px;
+  left: 6px;
 }
 
 .secret {
@@ -89,21 +96,26 @@ body {
 /*=====Main=====*/
 .content-header {
   margin: 0 auto;
-  width: 221px;
-  margin-bottom: 60px;
+  width: 262px;
+  margin-bottom: 47px;
+}
+
+.info {
+  margin-bottom: 29px;
 }
 
 .info-item {
   font-size: 0;
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  margin-bottom: 25px;
+  background-position-y: 15px;
+  background-position-x: 8px;
+  margin-bottom: 13px;
 }
 
 .info-item-title {
   font-size: 22.43px;
-  line-height: 49.83px;
+  line-height: 38.83px;
   font-weight: 700;
   color: #2f1b15;
   display: inline-block;
@@ -111,6 +123,7 @@ body {
   background-image: url("../img/background.jpg");
   height: 36px;
   padding-right: 15px;
+  padding-top: 13px;
 }
 
 .info-item-text {
@@ -126,7 +139,7 @@ body {
 
 .htmlacademy {
   font-size: 0;
-  margin-bottom: 50px;
+  padding-top: 24px;
 }
 
 .htmlacademy-select {
@@ -136,7 +149,7 @@ body {
   line-height: 36px;
   color: #2f1b15;
   font-weight: 700;
-  margin-right: 35px;
+  margin-right: 51px;
 }
 
 .htmlacademy-select a {
@@ -150,7 +163,8 @@ body {
   line-height: 36px;
   color: #2f1b15;
   font-weight: 700;
-  margin-right: 25px;
+  margin-right: 37px;
+  padding-top: 2px;
 }
 
 input[type="radio"] {
@@ -160,7 +174,7 @@ input[type="radio"] {
 input[type="radio"] + label {
   position: relative;
   display: block;
-  padding-left: 15px;
+  padding-left: 16px;
   cursor: pointer;
 }
 
@@ -187,12 +201,17 @@ input[type="radio"]:checked + label::before {
 }
 
 .skills {
-  margin-bottom: 90px;
+  margin-bottom: 56px;
+}
+
+.skills-text {
+  position: relative;
+  margin-bottom: 22px;
 }
 
 .skills-text-header {
   font-size: 22.43px;
-  line-height: 49.83px;
+  line-height: 43.83px;
   font-weight: 700;
   color: #2f1b15;
 }
@@ -202,16 +221,38 @@ input[type="radio"]:checked + label::before {
   line-height: 22px;
   font-weight: 400;
   color: #3d3d3d;
+  margin: 0;
+  padding-left: 19px;
 }
 
-.skills-text-description span {
-  font-size: 22px;
-  font-weight: 700;
+.skills-text-description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/snow.png");
+  top: 51px;
+  left: 1px;
+  width: 11px;
+  height: 9px;
 }
 
 .skills-select-block {
   float: left;
-  width: 250px;
+  width: 240px;
+  margin-right: 41px;
+}
+
+.skills-select-block:nth-child(2) {
+  margin-right: 17px;
+}
+
+.skills-select-block:last-child {
+  margin-right: 0;
+}
+
+.skills-select-item {
+  padding-left: 14px;
+  padding-bottom: 10px;
 }
 
 input[type="checkbox"] {
@@ -228,8 +269,8 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -22px;
+  top: -5px;
+  left: -13px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   display: block;
@@ -258,7 +299,8 @@ input[type="checkbox"]:checked + label::before {
   font-weight: 700;
   color: #2f1b15;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
+  padding-left: 11px;
 }
 
 .slider-scale {
@@ -277,8 +319,8 @@ input[type="checkbox"]:checked + label::before {
   width: 17px;
   height: 14px;
   background-position: -10px -236px;
-  top: 77px;
-  left: 5px;
+  top: 63px;
+  left: 7px;
   cursor: pointer;
 }
 
@@ -294,7 +336,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #3f241e;
   content: "";
   top: -32px;
-  left: 10px;
+  left: 14px;
 }
 
 .slider-points-item2::before {
@@ -305,7 +347,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #3f241e;
   content: "";
   top: -32px;
-  left: 156px;
+  left: 162px;
 }
 
 .slider-points-item3::before {
@@ -316,7 +358,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #3f241e;
   content: "";
   top: -32px;
-  left: 381px;
+  left: 387px;
 }
 
 .slider-points-item4::before {
@@ -327,7 +369,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #3f241e;
   content: "";
   top: -32px;
-  left: 766px;
+  left: 770px;
 }
 
 .slider-text {
@@ -342,35 +384,36 @@ input[type="checkbox"]:checked + label::before {
 .slider-text-item1 {
   margin: 0;
   position: absolute;
-  top: -10px;
-  left: 8px;
+  top: -3px;
+  left: 13px;
 }
 
 .slider-text-item2 {
   margin: 0;
   position: absolute;
-  top: -10px;
-  left: 154px;
+  top: -5px;
+  left: 158px;
 }
 
 .slider-text-item3 {
   margin: 0;
   position: absolute;
-  top: -10px;
-  left: 380px;
+  top: -5px;
+  left: 385px;
   width: 176px;
 }
 
 .slider-text-item4 {
   margin: 0;
   position: absolute;
-  top: -10px;
-  left: 633px;
+  top: 2px;
+  left: 639px;
 }
 
 /*=====Footer=====*/
 .main-footer {
-  padding-bottom: 80px;
+  padding-bottom: 64px;
+  padding-top: 10px;
 }
 
 .date {
@@ -384,6 +427,7 @@ input[type="checkbox"]:checked + label::before {
   color: #2f1b15;
   display: inline-block;
   vertical-align: top;
+  padding-top: 6px;
 }
 
 .date-item2 {
@@ -396,6 +440,7 @@ input[type="checkbox"]:checked + label::before {
   vertical-align: top;
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
-  background-position-y: 5px;
+  background-position-y: 10px;
   padding: 0 15px;
+  padding-bottom: 10px;
 }
