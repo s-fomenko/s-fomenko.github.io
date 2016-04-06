@@ -24,6 +24,43 @@ body {
   clear: both;
 }
 
+/*=====Sprite=====*/
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox-off {
+    width: 24px;
+    height: 28px;
+    background-position: -10px -10px;
+}
+
+.sprite-checkbox-on {
+    width: 24px;
+    height: 28px;
+    background-position: -10px -58px;
+}
+
+.sprite-radio-off {
+    width: 41px;
+    height: 45px;
+    background-position: -10px -106px;
+}
+
+.sprite-radio-on {
+    width: 41px;
+    height: 45px;
+    background-position: -10px -171px;
+}
+
+.sprite-triangle {
+    width: 17px;
+    height: 14px;
+    background-position: -10px -236px;
+}
+
 /*=====Header=====*/
 .main-header {
   padding-top: 46px;
@@ -60,7 +97,7 @@ body {
   font-size: 0;
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position-y: 5px;
   margin-bottom: 25px;
 }
 
@@ -77,7 +114,7 @@ body {
 }
 
 .info-item-text {
-  font-family: "Courier New";
+  font-family: "Courier New", "Courier", monospace;
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
@@ -132,14 +169,25 @@ input[type="radio"] + label::before {
   position: absolute;
   top: -4px;
   left: -22px;
-  width: 45px;
-  height: 45px;
-  background-image: url("../img/radio-off.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+  display: block;
+  width: 41px;
+  height: 45px;
+  background-position: -10px -106px;
 }
 
 input[type="radio"]:checked + label::before {
-  background-image: url("../img/radio-on.png");
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 41px;
+  height: 45px;
+  background-position: -10px -171px;
+}
+
+.skills {
+  margin-bottom: 90px;
 }
 
 .skills-text-header {
@@ -154,6 +202,11 @@ input[type="radio"]:checked + label::before {
   line-height: 22px;
   font-weight: 400;
   color: #3d3d3d;
+}
+
+.skills-text-description span {
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .skills-select-block {
@@ -177,13 +230,172 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: -4px;
   left: -22px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
   width: 24px;
   height: 28px;
-  background-image: url("../img/checkbox-off.png");
-  background-repeat: no-repeat;
+  background-position: -10px -10px;
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-image: url("../img/checkbox-on.png");
-  /* TODO: Сделать спрайт */
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 24px;
+  height: 28px;
+  background-position: -10px -58px;
+}
+
+/*=====Slider=====*/
+.slider {
+  position: relative;
+}
+
+.slider-title {
+  font-size: 22.43px;
+  line-height: 49.83px;
+  font-weight: 700;
+  color: #2f1b15;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.slider-scale {
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 33px;
+}
+
+.slider-marker::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 17px;
+  height: 14px;
+  background-position: -10px -236px;
+  top: 77px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.slider-points {
+  position: relative;
+}
+
+.slider-points-item1::before {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 23px;
+  background-color: #3f241e;
+  content: "";
+  top: -32px;
+  left: 10px;
+}
+
+.slider-points-item2::before {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 10px;
+  background-color: #3f241e;
+  content: "";
+  top: -32px;
+  left: 156px;
+}
+
+.slider-points-item3::before {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 10px;
+  background-color: #3f241e;
+  content: "";
+  top: -32px;
+  left: 381px;
+}
+
+.slider-points-item4::before {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 23px;
+  background-color: #3f241e;
+  content: "";
+  top: -32px;
+  left: 766px;
+}
+
+.slider-text {
+  position: relative;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #2f1b15;
+  margin-bottom: 70px;
+}
+
+.slider-text-item1 {
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  left: 8px;
+}
+
+.slider-text-item2 {
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  left: 154px;
+}
+
+.slider-text-item3 {
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  left: 380px;
+  width: 176px;
+}
+
+.slider-text-item4 {
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  left: 633px;
+}
+
+/*=====Footer=====*/
+.main-footer {
+  padding-bottom: 80px;
+}
+
+.date {
+  font-size: 0;
+}
+
+.date-item1 {
+  font-size: 22.43px;
+  line-height: 49.83px;
+  font-weight: 700;
+  color: #2f1b15;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.date-item2 {
+  font-family: "Courier New", "Courier", monospace;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #231f20;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  padding: 0 15px;
 }
