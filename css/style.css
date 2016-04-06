@@ -1,12 +1,189 @@
 body {
-  font-size: 22.43px;
-  line-height: 49.83px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 700;
+  background-color: #797979;
   /* TODO: Добавить Courier New */
+}
+
+.site-wrapper {
+  width: 1001px;
+  margin: 0 auto;
+  background-image: url("../img/background.jpg");
+}
+
+.content-wrapper {
+  width: 771px;
+  margin: 0 auto;
 }
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+/*=====Header=====*/
+.main-header {
+  padding-top: 46px;
+  padding-left: 48px;
+  padding-right: 55px;
+  margin-bottom: 35px;
+}
+
+.main-logo{
+  float: left;
+  width: 240px;
+}
+
+.main-logo-text {
+  color: #2f1b15;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.secret {
+  float: right;
+  width: 252px;
+}
+
+/*=====Main=====*/
+.content-header {
+  margin: 0 auto;
+  width: 221px;
+  margin-bottom: 60px;
+}
+
+.info-item {
+  font-size: 0;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-bottom: 25px;
+}
+
+.info-item-title {
+  font-size: 22.43px;
+  line-height: 49.83px;
+  font-weight: 700;
+  color: #2f1b15;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/background.jpg");
+  height: 36px;
+  padding-right: 15px;
+}
+
+.info-item-text {
+  font-family: "Courier New";
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #231f20;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+}
+
+.htmlacademy {
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+.htmlacademy-select {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 22.43px;
+  line-height: 36px;
+  color: #2f1b15;
+  font-weight: 700;
+  margin-right: 35px;
+}
+
+.htmlacademy-select a {
+  color: #014f98;
+}
+
+.htmlacademy-select-item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 22px;
+  line-height: 36px;
+  color: #2f1b15;
+  font-weight: 700;
+  margin-right: 25px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  display: block;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -22px;
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/radio-off.png");
+  background-repeat: no-repeat;
+}
+
+input[type="radio"]:checked + label::before {
+  background-image: url("../img/radio-on.png");
+}
+
+.skills-text-header {
+  font-size: 22.43px;
+  line-height: 49.83px;
+  font-weight: 700;
+  color: #2f1b15;
+}
+
+.skills-text-description {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.skills-select-block {
+  float: left;
+  width: 250px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -22px;
+  width: 24px;
+  height: 28px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/checkbox-on.png");
+  /* TODO: Сделать спрайт */
 }
