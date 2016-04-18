@@ -2,182 +2,192 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>CSSSR</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>HTML Academy: Нёрдс</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="site-wrapper">
-      <header class="main-header clearfix">
+    <header class="main-header">
+      <div class="container clearfix">
         <div class="main-logo">
-          <img class="main-logo-img" src="img/logo.png" alt="CSSSR" width="154" height="52">
-          <div class="main-logo-text">Секретный архив учреждения</div>
+          <img src="img/main-logo.png" width="139" height="56" alt="Студия Nerds">
         </div>
-        <img class="secret" src="img/secret.png" alt="Top Secret" width="252" height="106">
-      </header>
-      <div class="content-wrapper">
-        <main class="main-content">
-          <div class="content-header">
-            <img src="img/header.png" alt="Header" width="221" height="118">
-          </div>
-          <div class="info">
-            <div class="info-item">
-              <div class="info-item-title">Полное ФИО</div>
-              <div class="info-item-text">Фоменко Сергей Владимирович</div>
-            </div>
-            <div class="info-item">
-              <div class="info-item-title">Год рождения</div>
-              <div class="info-item-text">1980</div>
-            </div>
-            <div class="info-item">
-              <div class="info-item-title">Место жительства</div>
-              <div class="info-item-text">г. Санкт-Петербург, Россия</div>
-            </div>
-            <div class="info-item">
-              <div class="info-item-title">Скайп</div>
-              <div class="info-item-text">sv.fomenko</div>
-            </div>
-            <div class="info-item">
-              <div class="info-item-title">Почта</div>
-              <div class="info-item-text">fomenko.personal@gmail.com</div>
-            </div>
-            <form class="htmlacademy" action="#" method="post">
-              <div class="htmlacademy-select">
-                Выпускник
-                <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
-              </div>
-              <div class="htmlacademy-select-item">
-                <input id="select1" type="radio" name="graduate" value="yes" checked>
-                <label for="select1">Да</label>
-              </div>
-              <div class="htmlacademy-select-item">
-                <input id="select2" type="radio" name="graduate" value="no">
-                <label for="select2">Нет</label>
-              </div>
-            </form>
-          </div>
-          <div class="skills">
-            <form class="skills-select clearfix" action="#" method="post">
-              <legend class="skills-text">
-                <div class="skills-text-header">
-                  Практические навыки
-                </div>
-                <p class="skills-text-description">Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
-              </legend>
-              <div class="skills-select-block">
-                <div class="skills-select-item">
-                  <input id="skills1" type="checkbox" name="skills" value="bem">
-                  <label for="skills1">Методология БЭМ</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills2" type="checkbox" name="skills" value="jquery">
-                  <label for="skills2">jQuery</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills3" type="checkbox" name="skills" value="grunt">
-                  <label for="skills3">Использую GRUNT</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills4" type="checkbox" name="skills" value="haml">
-                  <label for="skills4">HAML</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills5" type="checkbox" name="skills" value="sass">
-                  <label for="skills5">SASS</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills6" type="checkbox" name="skills" value="less">
-                  <label for="skills6">LESS</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills7" type="checkbox" name="skills" value="coffeescript">
-                  <label for="skills7">CoffeeScript</label>
-                </div>
-              </div>
-              <div class="skills-select-block">
-                <div class="skills-select-item">
-                  <input id="skills8" type="checkbox" name="skills" value="jade">
-                  <label for="skills8">Jade</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills9" type="checkbox" name="skills" value="stylus">
-                  <label for="skills9">Stylus</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills10" type="checkbox" name="skills" value="angular">
-                  <label for="skills10">Знаю (изучаю) Angular</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills11" type="checkbox" name="skills" value="android">
-                  <label for="skills11">Верстка под Android</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills12" type="checkbox" name="skills" value="ios">
-                  <label for="skills12">Верстка под iOS</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills13" type="checkbox" name="skills" value="wp">
-                  <label for="skills13">Верстка под Windows Phone</label>
-                </div>
-              </div>
-              <div class="skills-select-block">
-                <div class="skills-select-item">
-                  <input id="skills14" type="checkbox" name="skills" value="mail">
-                  <label for="skills14">Верстка рассылок</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills15" type="checkbox" name="skills" value="adaptive">
-                  <label for="skills15">Адаптивная верстка</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills16" type="checkbox" name="skills" value="dropbox" checked>
-                  <label for="skills16">Использую Dropbox</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills17" type="checkbox" name="skills" value="gmail" checked>
-                  <label for="skills17">Использую Gmail</label>
-                </div>
-                <div class="skills-select-item">
-                  <input id="skills18" type="checkbox" name="skills" value="github" checked>
-                  <label for="skills18">Использую GitHub</label>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="slider">
-            <p class="slider-title">Уровень владения JavaScript</p>
-            <div class="slider-scale slider-marker"></div>
-            <div class="slider-points">
-              <div class="slider-points-item1"></div>
-              <div class="slider-points-item2"></div>
-              <div class="slider-points-item3"></div>
-              <div class="slider-points-item4"></div>
-            </div>
-            <div class="slider-text">
-              <p class="slider-text-item1">
-                Не владею
-              </p>
-              <p class="slider-text-item2">
-                Использую готовые решения
-              </p>
-              <p class="slider-text-item3">
-                Использую готовые решения и умею их переделывать
-              </p>
-              <p class="slider-text-item4">
-                Пишу сложные скрипты
-              </p>
-            </div>
-          </div>
-        </main>
-        <footer class="main-footer">
-          <div class="date">
-            <div class="date-item1">Дата заполенения</div>
-            <div class="date-item2">06.04.2016</div>
-          </div>
-        </footer>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="./catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a class="icon-basket" href="#">Корзина
+          </a>
+        </div>
       </div>
+      <div class="container">
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого, скрупулезно
+                </div>
+                <p class="slide-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
+                <p class="slide-paragraph">Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только наркотики,<br>только хардкор!</div>
+                <p class="slide-paragraph">Все дизайнерские решения в нашей компании принимаются<br>
+    только под воздействием качественных галлюциногенов</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="index-main">
+      <section class="features container clearfix">
+        <div class="features-item">
+          <img src="img/websites.png" width="240" height="124" alt="Веб-сайты" class="features-logo">
+          <h2 class="features-name">Веб-сайты</h2>
+          <p class="features-paragraph">
+            Мир никогда не будет прежним,
+            после того как увидит ваш сайт!
+          </p>
+          <a href="#" class="btn btn-red">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="img/apps.png" width="240" height="124" alt="Приложения" class="features-logo">
+          <h2 class="features-name">Приложения</h2>
+          <p class="features-paragraph">
+            Покорите топ-10 приложений<br>
+            в AppStore и Google Play
+          </p>
+          <a href="#" class="btn btn-green">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="img/presentations.png" width="240" height="124" alt="Презентации" class="features-logo">
+          <h2 class="features-name">Презентации</h2>
+          <p class="features-paragraph">
+            Вы даже не подозреваете,
+            насколько вы изумительны!
+          </p>
+          <a href="#" class="btn btn-yellow">Заказать</a>
+        </div>
+      </section>
+      <section class="about container clearfix">
+        <div class="about-left">
+          <h1 class="studio">
+            Мы — маленькая, но гордая
+            дизайн-студия из Краснодара.
+          </h1>
+          <p class="studio-paragraph">
+            Исповедуем принципы минимализма и чистоты. Ставим математический<br>
+            расчет выше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <p class="studio-paragraph-up">Выполняем заказы на разработку:</p>
+          <ul class="studio-list">
+            <li class="studio-list-item">Веб-сайтов любой сложности</li>
+            <li class="studio-list-item">Мобильных приложений для IOS и Android</li>
+            <li class="studio-list-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-right">
+          <div class="logo">
+            <img src="img/second-logo.png" width="240" height="119" alt="Студия Nerds">
+          </div>
+          <p class="studio-paragraph-up">Как мы работаем</p>
+          <ul class="studio-list">
+            <li class="studio-list-item">С самоотдачей 146%</li>
+            <li class="studio-list-item">Соблюдая сроки на 100%</li>
+            <li class="studio-list-item">По предоплате 50%</li>
+          </ul>
+        </div>
+      </section>
+      <div class="portfolio container clearfix">
+        <a href="#" class="portfolio-item">
+          <img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko">
+        </a>
+        <a href="#" class="portfolio-item">
+          <img src="img/html-academy.png" width="199" height="68" alt="HTML Academy">
+        </a>
+        <a href="#" class="portfolio-item">
+          <img src="img/borodinski.png" width="209" height="90" alt="Barbershop Borodinski">
+        </a>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456318989151" allowfullscreen></iframe>
+        <div class="container clearfix">
+          <section class="map-contacts">
+            <b class="map-contacts-header">Nёrds Design Studio</b>
+            <p class="map-contacts-paragraph">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д.19/8
+            </p>
+            <p class="map-contacts-paragraph">тел. +7 (812) 275-75-75</p>
+            <a href="form.html" class="btn-contacts">Напишите нам</a>
+          </section>
+        </div>
+      </div>
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="discont">
+            <p class="discont-paragraph1">Давайте дружить, это выгодно!</p>
+            <p class="discont-paragraph2">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-window">
+      <button class="modal-window-close" type="button" title="Закрыть"></button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-text clearfix">
+          <div class="modal-text-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="modal-text-e-mail">
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <label for="feedback">Текст письма:</label>
+        <textarea name="feedback" id="feedback" placeholder="В свободной форме"></textarea>
+        <button class="btn-modal" type="submit">Отправить</button>
+      </form>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
