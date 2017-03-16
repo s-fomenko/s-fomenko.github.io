@@ -2,192 +2,275 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Green Valley</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500|PT+Serif+Caption" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <div class="main-logo">
-          <img src="img/main-logo.png" width="139" height="56" alt="Студия Nerds">
-        </div>
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="./catalog.html">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="cart">
-          <a class="icon-basket" href="#">Корзина
+
+
+    <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-logo">
+          <a class="page-logo__link">
+            <img class="page-logo__img" src="img/main-logo.png" alt="Green Valley" width="143" height="49">
           </a>
+        </div>
+          <div class="main-navigation">
+            <div class="main-navigation__toggler">
+              <span class="main-navigation__toggler-elem"></span>
+            </div>
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link  main-navigation__link--active">Номера</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Коттедж</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Ресторан</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Отдых</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        <div class="page-header__contacts">
+          <a class="page-header__tel" href="tel:+78127775588">+7 812 777-55-88</a>
+          <div class="page-header__address">
+            г. Санкт-Петербург, Приморское ш.600
+          </div>
+        </div>
+        <a class="btn  btn--header" href="#">Забронировать</a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="hero-section">
+        <div class="hero-section__wrapper">
+          <h1 class="hero-section__header">
+            <span>Семейный отдых на берегу Финского залива</span>
+          </h1>
+          <p class="hero-section__text">
+            <span>
+              Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.
+            </span>
+          </p>
         </div>
       </div>
       <div class="container">
-        <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+        <div class="features">
+          <div class="tab">
+            <ul class="tab__list">
+              <li class="tab__item">
+                <a href="#" class="tab__link  tab__link--orange">Семейный отдых</a>
+              </li>
+              <li class="tab__item">
+                <a href="#" class="tab__link">Корпоративный</a>
+              </li>
+            </ul>
           </div>
-          <div class="slides">
-            <div class="slide">
-              <div class="slide-text">
-                <div class="slide-title">Долго, дорого, скрупулезно
-                </div>
-                <p class="slide-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide-text">
-                <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
-                <p class="slide-paragraph">Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide-text">
-                <div class="slide-title">Только наркотики,<br>только хардкор!</div>
-                <p class="slide-paragraph">Все дизайнерские решения в нашей компании принимаются<br>
-    только под воздействием качественных галлюциногенов</p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="index-main">
-      <section class="features container clearfix">
-        <div class="features-item">
-          <img src="img/websites.png" width="240" height="124" alt="Веб-сайты" class="features-logo">
-          <h2 class="features-name">Веб-сайты</h2>
-          <p class="features-paragraph">
-            Мир никогда не будет прежним,
-            после того как увидит ваш сайт!
-          </p>
-          <a href="#" class="btn btn-red">Заказать</a>
-        </div>
-        <div class="features-item">
-          <img src="img/apps.png" width="240" height="124" alt="Приложения" class="features-logo">
-          <h2 class="features-name">Приложения</h2>
-          <p class="features-paragraph">
-            Покорите топ-10 приложений<br>
-            в AppStore и Google Play
-          </p>
-          <a href="#" class="btn btn-green">Заказать</a>
-        </div>
-        <div class="features-item">
-          <img src="img/presentations.png" width="240" height="124" alt="Презентации" class="features-logo">
-          <h2 class="features-name">Презентации</h2>
-          <p class="features-paragraph">
-            Вы даже не подозреваете,
-            насколько вы изумительны!
-          </p>
-          <a href="#" class="btn btn-yellow">Заказать</a>
-        </div>
-      </section>
-      <section class="about container clearfix">
-        <div class="about-left">
-          <h1 class="studio">
-            Мы — маленькая, но гордая
-            дизайн-студия из Краснодара.
-          </h1>
-          <p class="studio-paragraph">
-            Исповедуем принципы минимализма и чистоты. Ставим математический<br>
-            расчет выше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <p class="studio-paragraph-up">Выполняем заказы на разработку:</p>
-          <ul class="studio-list">
-            <li class="studio-list-item">Веб-сайтов любой сложности</li>
-            <li class="studio-list-item">Мобильных приложений для IOS и Android</li>
-            <li class="studio-list-item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-        </div>
-        <div class="about-right">
-          <div class="logo">
-            <img src="img/second-logo.png" width="240" height="119" alt="Студия Nerds">
-          </div>
-          <p class="studio-paragraph-up">Как мы работаем</p>
-          <ul class="studio-list">
-            <li class="studio-list-item">С самоотдачей 146%</li>
-            <li class="studio-list-item">Соблюдая сроки на 100%</li>
-            <li class="studio-list-item">По предоплате 50%</li>
-          </ul>
-        </div>
-      </section>
-      <div class="portfolio container clearfix">
-        <a href="#" class="portfolio-item">
-          <img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko">
-        </a>
-        <a href="#" class="portfolio-item">
-          <img src="img/html-academy.png" width="199" height="68" alt="HTML Academy">
-        </a>
-        <a href="#" class="portfolio-item">
-          <img src="img/borodinski.png" width="209" height="90" alt="Barbershop Borodinski">
-        </a>
-      </div>
-    </main>
-    <footer class="main-footer">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456318989151" allowfullscreen></iframe>
-        <div class="container clearfix">
-          <section class="map-contacts">
-            <b class="map-contacts-header">Nёrds Design Studio</b>
-            <p class="map-contacts-paragraph">
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д.19/8
+          <section class="tab-content">
+            <h2 class="page-title  page-title--tab">Здоровый отдых</h2>
+            <p class="tab-content__text">
+            Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в базе или спа.
             </p>
-            <p class="map-contacts-paragraph">тел. +7 (812) 275-75-75</p>
-            <a href="form.html" class="btn-contacts">Напишите нам</a>
+            <p class="tab-content__text  tab-content__text--hidden">
+              Почувствуйте отдых!
+            </p>
+            <div class="advantages">
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <a href="#" class="advantages__link">
+                    <img src="img/swimming_pool.png" alt="Бассейн" width="80" height="80">
+                    Бассейн
+                  </a>
+                </li>
+                <li class="advantages__item">
+                  <a href="#" class="advantages__link">
+                    <img src="img/football.png" alt="Бассейн" width="80" height="80">
+                    Спортивная<br>площадка
+                  </a>
+                </li>
+                <li class="advantages__item">
+                  <a href="#" class="advantages__link">
+                    <img src="img/billiards.png" alt="Бассейн" width="80" height="80">
+                    Бильярд
+                  </a>
+                </li>
+                <li class="advantages__item">
+                  <a href="#" class="advantages__link">
+                    <img src="img/spa.png" alt="Бассейн" width="80" height="80">
+                    Спа
+                  </a>
+                </li>
+                <li class="advantages__item">
+                  <a href="#" class="advantages__link">
+                    <img src="img/sauna.png" alt="Бассейн" width="80" height="80">
+                    Бани
+                  </a>
+                </li>
+                <li class="advantages__item">
+                  <a href="#" class="advantages__link">
+                    <img src="img/animation.png" alt="Бассейн" width="80" height="80">
+                    Анимация
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
-      </div>
-      <div class="container clearfix">
-        <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <section class="gallery">
+          <img class="gallery-img" src="img/gallery3.jpg" alt="Фото интерьера" width="321" height="261">
+          <div class="preview">
+            <img class="preview-img" src="img/gallery7.jpg" alt="Фото интерьера" width="125" height="75">
+            <img class="preview-img" src="img/gallery1.jpg" alt="Фото интерьера" width="125" height="75">
+            <img class="preview-img" src="img/gallery2.jpg" alt="Фото интерьера" width="125" height="75">
+            <img class="preview-img" src="img/gallery3.jpg" alt="Фото интерьера" width="125" height="75">
+            <img class="preview-img" src="img/gallery4.jpg" alt="Фото интерьера" width="125" height="75">
+            <img class="preview-img" src="img/gallery5.jpg" alt="Фото интерьера" width="125" height="75">
+            <img class="preview-img" src="img/gallery6.jpg" alt="Фото интерьера" width="125" height="75">
+          </div>
+        </section>
+        <section class="feedback">
+          <h2 class="page-title  page-title--white">Отзывы</h2>
+          <div class="feedback__wrapper">
+            <div class="slider">
+              <div class="slider__item">
+                <div class="feedback-card">
+                  <div class="feedback-card__image">
+                    <img src="img/customer-1.jpg" alt="Екатерина" width="82" height="82">
+                  </div>
+                  <div class="feedback-card__name">Екатерина В.</div>
+                  <a href="#" class="feedback-card__link">В Контакте</a>
+                  <p class="feedback-card__text">
+                  Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
+                  </p>
+                  <div class="feedback-card__date">
+                  Дата отдыха:<br>01.06.2015 - 08.06.2015
+                  </div>
+                </div>
+                <div class="feedback-card">
+                  <div class="feedback-card__image">
+                    <img src="img/customer-2.jpg" alt="Екатерина" width="82" height="82">
+                  </div>
+                  <div class="feedback-card__name">Екатерина В.</div>
+                  <a href="#" class="feedback-card__link--fb">facebook</a>
+                  <p class="feedback-card__text">
+                  Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
+                  </p>
+                  <div class="feedback-card__date">
+                  Дата отдыха:<br>15.05.2015 - 20.05.2015
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="slider__arrow slider__arrow--left">left</a>
+              <a href="#" class="slider__arrow slider__arrow--right">right</a>
+            </div>
+          </div>
+          <button class="btn btn--feedback">Все отзывы</button>
+        </section>
+        <div class="offer">
+          <h2 class="page-title  page-title--offer">Акции и предложения</h2>
+          <div class="offer-slider">
+            <div class="offer-slider__item">
+              <img class="offer__picture" src="img/weeretewrt.png" alt="Пейзаж" width="320" height="299">
+              <div class="offer__overlay">
+                <p class="offer__title">Скидки в мае</p>
+                <p class="offer__text">Забронируйте номер или коттедж любой категории до 31 июня и получите скидку 10% !</p>
+              </div>
+            </div>
+            <ul class="offer-slider__toggler">
+              <li class="offer-slider__toggler-elem  offer-slider__toggler-elem--active"></li>
+              <li class="offer-slider__toggler-elem"></li>
+            </ul>
+          </div>
         </div>
-        <div class="discont">
-            <p class="discont-paragraph1">Давайте дружить, это выгодно!</p>
-            <p class="discont-paragraph2">Скидка 10% для друзей из социальных сетей.</p>
+        <section class="page-contacts">
+          <div class="map">
+            <h2 class="page-title  page-title--contacts">Как до нас добраться</h2>
+            <div class="map__image">
+              <img src="img/map-desktop.jpg" alt="Карта проезда" width="321" height="400">
+            </div>
+          </div>
+          <div class="page-contacts__wrapper">
+            <div class="routes">
+              <h3 class="routes__header  routes__header--bus">Автобусы</h3>
+              <p class="routes__text">
+                <span>&#8470;&nbsp;211</span> от&nbsp;станции метро&laquo;Черная речка&raquo; до остановки<br>Санаторий Репино&raquo;<br>
+                <span>&#8470;&nbsp;305К</span> от&nbsp;станции метро&laquo;Старая деревня&raquo;<br>
+                <span>&#8470;&nbsp;680К</span> от&nbsp;станции метро&laquo;Проспект просвещения&raquo;<br>
+                <span>&#8470;&nbsp;400К</span> от&nbsp;станции метро&laquo;Площадь Ленина&raquo;
+              </p>
+            </div>
+            <div class="routes">
+              <h3 class="routes__header  routes__header--train">Электропоезд</h3>
+              <p class="routes__text">
+              Электропоезд Выборгского направления<br>от Финляндского вокзала Санкт-Петербурга<br> до&nbsp;платформы &laquo;Репино&raquo;
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="choose">
+          <h2 class="page-title page-title--choose">Где вы хотите отдохнуть?</h2>
+          <div class="choose__wrapper">
+            <div class="choose-card">
+              <a href="#" class="choose-card__link">
+                <img src="img/hotel-tablet.jpg" alt="Отель" width="278" height="199">
+                <p class="choose-card__title">
+                В отеле
+                </p>
+                <p class="choose-card__text">от <span class="choose-card__price">4000</span> руб./сутки
+                </p>
+              </a>
+            </div>
+            <div class="choose-card">
+              <div class="choose-card__wrapper">
+                <a href="#" class="choose-card__link">
+                  <img src="img/cottage-tablet.jpg" alt="Коттедж" width="278" height="199">
+                  <p class="choose-card__title">
+                  В коттедже
+                  </p>
+                  <p class="choose-card__text">от <span class="choose-card__price">6800</span> руб./сутки
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__address">
+          г. Санкт-Петербург, Приморское ш.600
+        </div>
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <a class="page-logo__link">
+              <img class="page-logo__img" src="img/main-logo.png" alt="Green Valley" width="143" height="49">
+            </a>
+          </div>
+          <div class="social">
+            <a href="#" class="social__link  social__link--vk">В Контакте</a>
+            <a href="#" class="social__link  social__link--ins">Instagram</a>
+            <a href="#" class="social__link  social__link--fb">FaceBook</a>
+          </div>
+        </div>
+        <div class="page-footer__contacts">
+          <a class="page-footer__tel" href="tel:+78127775588">+7 812 777-55-88</a>
+          <a class="page-footer__mail" href="mailto:info@greenvalley.ru">info@greenvalley.ru</a>
         </div>
       </div>
     </footer>
-    <div class="modal-window">
-      <button class="modal-window-close" type="button" title="Закрыть"></button>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-text clearfix">
-          <div class="modal-text-name">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-          </div>
-          <div class="modal-text-e-mail">
-            <label for="e-mail">Ваш e-mail:</label>
-            <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
-          </div>
-        </div>
-        <label for="feedback">Текст письма:</label>
-        <textarea name="feedback" id="feedback" placeholder="В свободной форме"></textarea>
-        <button class="btn-modal" type="submit">Отправить</button>
-      </form>
-    </div>
-    <script src="js/scripts.min.js"></script>
+
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

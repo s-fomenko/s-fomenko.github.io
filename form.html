@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Green Valley</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+
+    <header class="page-header">
+      <div class="page-logo">
+        <a class="page-logo__link">
+          <img class="page-logo__img" src="#" alt="Green Valley" width="100" height="50">
+        </a>
+      </div>
+        <div class="main-navigation">
+          <div class="main-navigation__toggler">
+            <span class="main-navigation__toggler-elem"></span>
+          </div>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link  main-navigation__link--active">Номера</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Коттедж</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Ресторан</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Отдых</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      <div class="page-header__contacts">
+        <a class="page-header__tel" href="tel:+78127775588">+7 812 777-55-88</a>
+        <div class="page-header__address">
+          г. Санкт-Петербург, Приморское ш.600
+        </div>
+      </div>
+      <a class="btn  btn--icon" href="#">Забронировать</a>
+    </header>
+
+    <main class="form-main">
+      <div class="booking">
+        <h1 class="page-header">Бронирование</h1>
+        <p class="booking__text">
+          Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: <a href="tel:+78127775588" class="booking__text  booking__text--orange">+7 812 777-55-88</a>
+        </p>
+      </div>
+
+      <form class="page-form" action="#" method="post">
+
+        <p class="page-form__text">Шаг 1</p>
+        <fieldset class="step-1-block">
+          <legend class="page-form__title">Дата отдыха</legend>
+          <div class="page-form__wrapper">
+            <div class="step-1-block__item">
+              <input id="check-in" type="date" name="check-in" value="2015-11-10">
+              <label class="step-1-block__label" for="check-in">Дата въезда</label>
+            </div>
+            <div class="step-1-block__item">
+              <input id="check-out" type="date" name="check-out">
+              <label class="step-1-block__label" for="check-out">Дата выезда</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <p class="page-form__text">Шаг 2</p>
+        <fieldset class="step-2-block">
+          <legend class="page-form__title">Место проживания</legend>
+          <label class="step-2-block__label">
+            <div class="page-form__wrapper">
+              <input id="hotel" type="radio" name="choose-place" value="hotel">
+            </div>
+            Отель
+          </label>
+
+          <label class="step-2-block__label" for="cottage">
+            <div class="page-form__wrapper">
+              <input id="cottage" type="radio" name="choose-place" value="cottage" checked>
+            </div>
+            Коттедж
+          </label>
+
+        </fieldset>
+
+        <p class="page-form__text">Шаг 3</p>
+        <fieldset class="step-3-block">
+          <legend class="page-form__title">Тип коттеджа</legend>
+          <ul class="page-form__list">
+            <li>
+              <label class="step-3-block__label">
+                <input id="flagship" type="checkbox" name="place-type" value="flagship" checked>
+                Флагман
+              </label>
+            </li>
+            <li>
+              <label class="step-3-block__label">
+                <input id="lake" type="checkbox" name="place-type" value="lake">
+                Озёрный
+              </label>
+            </li>
+            <li>
+              <label class="step-3-block__label">
+                <input id="port" type="checkbox" name="place-type" value="port">
+                Портовый
+              </label>
+            </li>
+            <li>
+              <label class="step-3-block__label">
+                <input id="olhovka" type="checkbox" name="place-type" value="olhovka">
+                Ольховка
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="step-wrapper">
+          <p class="page-form__text">Шаг 4</p>
+          <fieldset class="step-4-block">
+            <legend class="page-form__title">Персональная информация</legend>
+            <div class="step-4-block__item">
+              <input class="input-text" type="text" name="first-name" value="Владимир" placeholder="Имя">
+            </div>
+            <div class="step-4-block__item">
+              <input class="input-text" type="text" name="last-name" placeholder="Фамилия">
+            </div>
+            <div class="step-4-block__item">
+              <input class="input-text" id="tel" type="tel" name="tel" placeholder="Номер телефона">
+              <label class="step-4-block__label" for="tel"></label>
+            </div>
+            <p class="page-form__text  page-form__text--small">Мы свяжемся с вами в случае необходимости.</p>
+            <div class="step-4-block">
+              <input class="input-text" id="email" type="email" name="email" placeholder="E-mail">
+              <label class="step-4-block__label" for="email"></label>
+            </div>
+            <p class="page-form__text  page-form__text--small">На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
+          </fieldset>
+        </div>
+
+        <p class="page-form__text">Шаг 5</p>
+        <fieldset class="step-5-block">
+          <legend class="page-form__title">Способ оплаты</legend>
+          <label class="step-5-block__label">
+            <input type="radio" name="payment" value="later">
+            По приезду
+            <p class="page-form__notice">
+              Вы можете произвести оплату по факту заселения.
+            </p>
+          </label>
+          <label class="step-5-block__label">
+            <input type="radio" name="payment" value="now" checked>
+            Сейчас
+            <p class="page-form__notice">
+              Прямо сейчас вы можете произвести оплату с помощью банковской карты.
+            </p>
+          </label>
+          <div class="step-5-block__item">
+            <input class="input-text" id="card" type="text" name="card" placeholder="0000-0000-0000-0000">
+            <label class="step-5-block__label" for="card">Номер карты</label>
+          </div>
+          <div class="step-5-block__item">
+            <input class="input-text" id="customer" type="text" name="customer" placeholder="Vladimir Vladimirov">
+            <label class="step-5-block__label" for="customer">Фамилия владельца карты</label>
+          </div>
+          <div class="step-5-block__item">
+            <input class="input-text" id="cvv" type="text" name="cvv" placeholder="123">
+            <label class="step-5-block__label" for="cvv">Код cvv</label>
+            <img src="img/question-icon.png" alt="Знак вопроса" width="16" height="17">
+          </div>
+          <div class="step-5-block__item">
+            <input class="input-text" id="valid-until" type="text" name="valid-until" placeholder="01 / 2018">
+            <label  class="step-5-block__label"for="valid-until">Действует до</label>
+          </div>
+        </fieldset>
+
+        <div class="date-notice">
+          <p class="page-form__text">К оплате</p>
+          <p class="page-form__text  page-form__text--small">
+            Пожалуйста, <a href="#check-in">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате
+          </p>
+        </div>
+
+        <button class="form-btn" type="submit">Забронировать</button>
+
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__address">
+        г. Санкт-Петербург, Приморское ш.600
+      </div>
+      <div class="page-logo">
+        <a class="page-logo__link">
+          <img class="page-logo__img" src="#" alt="Green Valley" width="100" height="50">
+        </a>
+      </div>
+      <div class="social">
+        <a href="#" class="social__link  social__link--vk">В Контакте</a>
+        <a href="#" class="social__link  social__link--ins">Instagram</a>
+        <a href="#" class="social__link  social__link--fb">FaceBook</a>
+      </div>
+      <div class="page-footer__contacts">
+        <a class="page-footer__tel" href="tel:+78127775588">+7 812 777-55-88</a>
+        <a class="page-footer__mail" href="mailto:info@greenvalley.ru">info@greenvalley.ru</a>
+      </div>
+    </footer>
+
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
