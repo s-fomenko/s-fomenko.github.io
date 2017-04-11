@@ -2,192 +2,464 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фонд «Нить Добра»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,700|PT+Serif&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <div class="main-logo">
-          <img src="img/main-logo.png" width="139" height="56" alt="Студия Nerds">
-        </div>
+
+
+    <header class="page-header">
+
+
+      <div class="page-header__inner">
+        <img class="page-header__logo" src="img/page-header-logo.svg" alt="Логотип" width="51" height="30">
         <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li>
-              <a href="#">Студия</a>
+          <div class="main-navigation__toggler">
+            <p class="main-navigation__toggler-text">Меню</p>
+            <span class="main-navigation__toggler-elem"></span>
+          </div>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Проекты</a>
             </li>
-            <li>
-              <a href="#">Клиенты</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Волонтёрство</a>
             </li>
-            <li>
-              <a href="./catalog.html">Магазин</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">О фонде</a>
             </li>
-            <li>
-              <a href="#">Контакты</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Партнёры</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Документы</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Блог</a>
             </li>
           </ul>
         </nav>
-        <div class="cart">
-          <a class="icon-basket" href="#">Корзина
-          </a>
+      </div>
+
+      <div class="hero-section">
+        <div class="hero-section__inner">
+          <p class="page__sub-title  col-sm-3">Фонд «Нить Добра»</p>
+          <h1 class="page__title  col-sm-5">Поддерживаем детей вместе, чтобы они могли жить полноценно.</h1>
+          <p class="page__text col-sm-6">Оказываем поддержку онкобольным детям и подросткам, организуем работу волонтёров</p>
+          <p class="page__text  page__text--tablet">Оказываем психологическую поддержку онкобольным детям и подросткам и помогаем им вернуться в жизнь. Организуем работу волонтёров и продвигаем идею реабилитации в России.</p>
+          <form class="donate-form1" action="#" method="post">
+            <input class="donate-form1__input" type="text" name="amount" placeholder="100">
+            <select class="page-select" name="frequency">
+              <option class="page-select__item" value="monthly">Ежемесячно</option>
+              <option class="page-select__item" value="single">Разово</option>
+            </select>
+            <button class="btn  donate-form1__btn" type="submit">Пожертвовать</button>
+          </form>
         </div>
       </div>
-      <div class="container">
-        <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-          </div>
-          <div class="slides">
-            <div class="slide">
-              <div class="slide-text">
-                <div class="slide-title">Долго, дорого, скрупулезно
-                </div>
-                <p class="slide-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide-text">
-                <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
-                <p class="slide-paragraph">Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать</p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide-text">
-                <div class="slide-title">Только наркотики,<br>только хардкор!</div>
-                <p class="slide-paragraph">Все дизайнерские решения в нашей компании принимаются<br>
-    только под воздействием качественных галлюциногенов</p>
-                <a class="btn" href="#">Узнать больше</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </header>
-    <main class="index-main">
-      <section class="features container clearfix">
-        <div class="features-item">
-          <img src="img/websites.png" width="240" height="124" alt="Веб-сайты" class="features-logo">
-          <h2 class="features-name">Веб-сайты</h2>
-          <p class="features-paragraph">
-            Мир никогда не будет прежним,
-            после того как увидит ваш сайт!
-          </p>
-          <a href="#" class="btn btn-red">Заказать</a>
+
+
+    <main class="page-main">
+
+      <div class="video">
+        <div class="video__inner">
+          <!-- Два разных варианта вставки видео. Не знаю какой в данном случае лучше -->
+          <iframe width="288" height="150" src="https://www.youtube.com/embed/RDimtILZ3d0" frameborder="0" allowfullscreen></iframe>
+          <!-- <video class="video__clip" controls="controls" preload="metadata">
+            <source src="video/video.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+            <source src="video/video.webm" type="video/webm; codecs="vp8, vorbis"">
+          </video> -->
+          <p class="video__text">Александр Солоковский рассказывает о фонде «Нить Добра» (2 минуты)</p>
         </div>
-        <div class="features-item">
-          <img src="img/apps.png" width="240" height="124" alt="Приложения" class="features-logo">
-          <h2 class="features-name">Приложения</h2>
-          <p class="features-paragraph">
-            Покорите топ-10 приложений<br>
-            в AppStore и Google Play
-          </p>
-          <a href="#" class="btn btn-green">Заказать</a>
-        </div>
-        <div class="features-item">
-          <img src="img/presentations.png" width="240" height="124" alt="Презентации" class="features-logo">
-          <h2 class="features-name">Презентации</h2>
-          <p class="features-paragraph">
-            Вы даже не подозреваете,
-            насколько вы изумительны!
-          </p>
-          <a href="#" class="btn btn-yellow">Заказать</a>
-        </div>
-      </section>
-      <section class="about container clearfix">
-        <div class="about-left">
-          <h1 class="studio">
-            Мы — маленькая, но гордая
-            дизайн-студия из Краснодара.
-          </h1>
-          <p class="studio-paragraph">
-            Исповедуем принципы минимализма и чистоты. Ставим математический<br>
-            расчет выше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <p class="studio-paragraph-up">Выполняем заказы на разработку:</p>
-          <ul class="studio-list">
-            <li class="studio-list-item">Веб-сайтов любой сложности</li>
-            <li class="studio-list-item">Мобильных приложений для IOS и Android</li>
-            <li class="studio-list-item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-        </div>
-        <div class="about-right">
-          <div class="logo">
-            <img src="img/second-logo.png" width="240" height="119" alt="Студия Nerds">
-          </div>
-          <p class="studio-paragraph-up">Как мы работаем</p>
-          <ul class="studio-list">
-            <li class="studio-list-item">С самоотдачей 146%</li>
-            <li class="studio-list-item">Соблюдая сроки на 100%</li>
-            <li class="studio-list-item">По предоплате 50%</li>
-          </ul>
-        </div>
-      </section>
-      <div class="portfolio container clearfix">
-        <a href="#" class="portfolio-item">
-          <img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko">
-        </a>
-        <a href="#" class="portfolio-item">
-          <img src="img/html-academy.png" width="199" height="68" alt="HTML Academy">
-        </a>
-        <a href="#" class="portfolio-item">
-          <img src="img/borodinski.png" width="209" height="90" alt="Barbershop Borodinski">
-        </a>
       </div>
-    </main>
-    <footer class="main-footer">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1456318989151" allowfullscreen></iframe>
-        <div class="container clearfix">
-          <section class="map-contacts">
-            <b class="map-contacts-header">Nёrds Design Studio</b>
-            <p class="map-contacts-paragraph">
-              191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д.19/8
-            </p>
-            <p class="map-contacts-paragraph">тел. +7 (812) 275-75-75</p>
-            <a href="form.html" class="btn-contacts">Напишите нам</a>
+
+
+      <div class="rehabilitation">
+        <div class="rehabilitation__inner">
+          <p class="page__sub-title">Реабилитация и психологическая поддержка</p>
+          <h2 class="page__title">Реабилитация — это важно. Cтоит написать большой красивый заголовок.</h2>
+          <p class="page__text">Поддерживаем детей во время лечения, чтобы они не теряли веру в себя и в своё будущее. Чтобы дети могли вернуться в жизнь после лечения, мы проводим мероприятия и исполняем их мечты.</p>
+
+          <ul class="second-navigation">
+            <li class="second-navigation__item">
+              <a href="#" class="second-navigation__link">Проекты</a>
+            </li>
+            <li class="second-navigation__item">
+              <a href="#" class="second-navigation__link">Мероприятия</a>
+            </li>
+            <li class="second-navigation__item">
+              <a href="#" class="second-navigation__link">Уже помогли</a>
+            </li>
+          </ul>
+
+          <section class="slider">
+            <section class="slider__list">
+              <article class="card">
+                <img class="card__logo  card__logo--mobile" src="img/slider-logo-1-mobile.svg" alt="Заветная мечта" width="86" height="81">
+                <img class="card__logo" src="img/slider-logo-1.svg" alt="Заветная мечта" width="290" height="45">
+                <p class="card__text">Уникальная возможность для детей и подростков попробовать себя в профессии мечты.</p>
+                <a class="page__link" href="#">Смотреть проект</a>
+              </article>
+              <article class="card">
+                <img class="card__logo" src="img/slider-logo-2.svg" alt="Козмас" width="160" height="57">
+                <p class="card__text">Первый в росcии благотворительный проект помощи онкобольным детям полететь в открытый космос.</p>
+                <a class="page__link" href="#">Смотреть проект</a>
+              </article>
+            </section>
+            <section class="slider__list">
+              <article class="card">
+                <p class="card__date">17 сентября</p>
+                <h3 class="card__title">Парижский вечер</h3>
+                <p class="card__text">Окунёмся в атмосферу мягких французских булок и выпьем чаю. Специальными гостями будут какие-то французы.</p>
+                <a class="page__link" href="#">Записаться</a>
+              </article>
+              <article class="card">
+                <p class="card__date">22 сентября</p>
+                <h3 class="card__title">Большой субботник во Всеволожске</h3>
+                <p class="card__text">В эту субботу мы едем помогать ребятам из 31-й больницы Всеволожского района делать свой город чище.</p>
+                <a class="page__link" href="#">Записаться</a>
+              </article>
+              <article class="card">
+                <p class="card__date">2 октября</p>
+                <h3 class="card__title">Вечер караоке</h3>
+                <p class="card__text">Каждый четверг наши ребята устраивают настоящий концерт! Готовьте тексты, у нас будет весело.</p>
+                <a class="page__link" href="#">Записаться</a>
+              </article>
+            </section>
+            <section class="slider__list">
+              <article class="card">
+                <h3 class="card__title">Лиза</h3>
+                <p class="card__text">18 лет, мечтает сниматься в кино.</p>
+                <a class="page__link" href="#">Читать историю</a>
+              </article>
+              <article class="card">
+                <h3 class="card__title">Дима</h3>
+                <p class="card__text">6 лет, мечтает стать инженером и уже собрал свого первого робота ЛЕГО.</p>
+                <a class="page__link" href="#">Читать историю</a>
+              </article>
+              <article class="card">
+                <h3 class="card__title">Ваня</h3>
+                <p class="card__text">17 лет, мечтает готовить, как настоящий шеф-повар.</p>
+                <a class="page__link" href="#">Читать историю</a>
+              </article>
+            </section>
+            <a href="#" class="slider__arrow slider__arrow--right"></a>
           </section>
         </div>
       </div>
-      <div class="container clearfix">
-        <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-        <div class="discont">
-            <p class="discont-paragraph1">Давайте дружить, это выгодно!</p>
-            <p class="discont-paragraph2">Скидка 10% для друзей из социальных сетей.</p>
+
+
+      <div class="volunteering">
+        <div class="volunteering__inner">
+          <p class="page__sub-title">Продвижение сообщества реабилитации</p>
+          <h2 class="page__title">Полномасштабное наступление на фронте борьбы с болезнью. Волонтёрим на все сто.</h2>
+          <p class="page__text">Мало кто понимает, что возвращение детей к обычной жизни возможно только после всесторонней помощи ребенку. Мы собираем вокруг себя единомышленников, чтобы помогать детям вместе.</p>
+          <a class="page_link" href="#">Узнать больше</a>
+          <a class="btn volunteering__btn" href="#">Заполнить анкету</a>
         </div>
       </div>
-    </footer>
-    <div class="modal-window">
-      <button class="modal-window-close" type="button" title="Закрыть"></button>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-text clearfix">
-          <div class="modal-text-name">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+
+      <div class="partners">
+        <div class="partners__inner">
+          <p class="page__sub-title">Наши партнёры и спонсоры</p>
+          <h2 class="page__title">Стабильные организации помогают нам помогать. Вместе, мы сделаем мир лучше.</h2>
+          <p class="page__text">Мы помогаем делать бизнес в России социально ответственным. Такие организации, как «Таксовичков», «Бона Капона» и «Марчеллис» доверяют нам и уже поддержали нашу идею.</p>
+          <div class="partners__logo-list">
+            <img class="partners__logo-item" src="img/megafon-icon.svg" alt="Мегафон" width="180" height="32">
+            <img class="partners__logo-item" src="img/sts-icon.svg" alt="СТС" width="96" height="36">
+            <img class="partners__logo-item" src="img/meduza-icon.svg" alt="Meduza" width="180" height="38">
+            <img class="partners__logo-item" src="img/mail-icon.svg" alt="Почта России" width="104" height="50">
+            <img class="partners__logo-item" src="img/sberbank-icon.svg" alt="Сбербанк" width="180" height="35">
+            <img class="partners__logo-item" src="img/taksovichkoff-icon.png" alt="Таксовичкоф" width="114" height="54">
           </div>
-          <div class="modal-text-e-mail">
-            <label for="e-mail">Ваш e-mail:</label>
-            <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          <a class="page__link" href="#">Смотреть всех партнёров</a>
+        </div>
+      </div>
+
+      <section class="information">
+        <div class="information__inner">
+          <article class="information__item">
+            <p class="information__text">Новости, истории, полезные советы и все яркие моменты жизни нашего фонда.</p>
+            <a class="information__link" href="#">Читать блог</a>
+          </article>
+          <article class="information__item">
+            <p class="information__text">Мы — за прозрачность. Все наши документы находятся в открытом доступе.</p>
+            <a class="information__link" href="#">Смотреть документы</a>
+          </article>
+        </div>
+      </section>
+
+      <div class="donate">
+        <div class="donate__inner">
+          <p class="page__sub-title">Пожертвовать в фонд</p>
+          <h2 class="page__title">Минута вашего времени поможет нам исполнять еще больше детских мечт.</h2>
+          <p class="page__text">Все пожертвования уходят на реализацию наших проектов по оказанию психологической поддержки и реабилитации детей и подростков с онкологическими заболеваниями.</p>
+
+          <section class="donate__form-list">
+            <form class="donate-form2 action="#" method="post"">
+              <input class="donate-form2__input" id="single-donate" type="text" name="single-donate" placeholder="300">
+              <label class="donate-form2__label" for="single-donate">Вы также можете указать другую сумму.</label>
+              <button class="btn  donate-form2__btn" type="submit">Пожертвовать</button>
+            </form>
+            <form class="donate-form2 action="#" method="post"">
+              <input class="donate-form2__input" id="montly-donate" type="text" name="montly-donate" placeholder="100">
+              <label class="donate-form2__label" for="montly-donate">Помогайте каждый месяц. Вы также можете указать другую сумму.</label>
+              <button class="btn  donate-form2__btn" type="submit">Пожертвовать</button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <div class="sms">
+        <div class="sms__inner">
+          <h2 class="page__title">Пожертвовать через СМС</h2>
+          <p class="page__text">Отправьте сообщение на номер <span class="page__text  page__text--red">7715</span> с кодовым словом «Нить» и суммой пожертвования.</p>
+          <img class="sms__picture" src="img/donate-sms-phone.png" alt="Пожертвовать через СМС" width="294" height="515">
+        </div>
+      </div>
+
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__contacts">
+          <img class="page-footer__logo" src="img/page-footer-logo.svg" alt="Логотип" width="51" height="30">
+          <p class="page-foter__text">&copy; «Нить Добра», 2016.</p>
+          <p class="page-foter__text">ИНН 7864131528, КПП 781307501, ОГРН 1126800004708. Распространение материалов разрешается только при указании ссылки на первоисточник.</p>
+          <a class="btn  page-footer__btn" href="#">Связаться с нами</a>
+          <div class="social">
+            <a class="social__link  social__link--vk" href="#">Вконтакте</a>
+            <a class="social__link  social__link--ok" href="#">Одноклассники</a>
+            <a class="social__link  social__link--ins" href="#">Instagram</a>
+            <a class="social__link  social__link--fb" href="#">Facebook</a>
+            <a class="social__link  social__link--tw" href="#">Twitter</a>
           </div>
         </div>
-        <label for="feedback">Текст письма:</label>
-        <textarea name="feedback" id="feedback" placeholder="В свободной форме"></textarea>
-        <button class="btn-modal" type="submit">Отправить</button>
-      </form>
+
+        <div class="footer-navigation">
+          <div class="footer-navigation__toggler">
+            <span class="footer-navigation__toggler-text">Меню</span>
+            <span class="footer-navigation__toggler-elem"></span>
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">Проекты</a>
+                <ul class="footer-navigation__sub-list">
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Заветная мечта</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Вечер приключений</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">О наших проектах</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">Волонтёрство</a>
+                <ul class="footer-navigation__sub-list">
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Волонтёрство в фонде</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Уже с нами</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Стать волонтёром</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">Партнёры</a>
+                <ul class="footer-navigation__sub-list">
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Партнёры фонда</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Спонсоры</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Стать партнёром</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">О фонде</a>
+                <ul class="footer-navigation__sub-list">
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Попечительский совет</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Команда администрации</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Вакансии</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">Документы</a>
+                <ul class="footer-navigation__sub-list">
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Категория документов</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Категория документов</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Категория документов</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="#">Блог</a>
+                <ul class="footer-navigation__sub-list">
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Новости фонда</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Спонсоры</a>
+                  </li>
+                  <li class="footer-navigation__sub-item">
+                    <a href="#" class="footer-navigation__sub-link">Стать партнёром</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <div class="modal-window">
+
+      <div class="modal-window__inner">
+        <ul class="modal-navigation">
+          <li class="modal-navigation__list">
+            <a class="modal-navigation__link" href="#">Навигация</a>
+          </li>
+          <li class="modal-navigation__list">
+            <a class="modal-navigation__link" href="#">Пожертвовать</a>
+          </li>
+          <li class="modal-navigation__list">
+            <a class="modal-navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu">
+        <div class="mtnu__inner">
+          <ul class="menu-navigation__list">
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Проекты</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Волонтёрство</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">О фонде</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Партнёры</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Документы</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Блог</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-donate">
+        <div class="modal-donate__inner">
+          <h2 class="modal-donate__title">Пожертвовать</h2>
+          <form class="modal-form" action="#" method="post">
+
+            <div class="modal-form__block">
+              <label for="name">Ваше имя</label>
+              <input id="name" class="modal-form__input" type="text" name="name" placeholder="Константин Напримерный">
+              <p class="modal-form__text">Для анонимного пожертвования оставьте это поле незаполненным.</p>
+              <input class="modal-form__input" type="text" name="amount" placeholder="100">
+              <select class="modal-select" name="frequency">
+                <option class="modal-select__item" value="monthly">Ежемесячно</option>
+                <option class="modal-select__item" value="single">Разово</option>
+              </select>
+            </div>
+
+            <div class="modal-form__block">
+              <label for="card">Номер банковской карты</label>
+              <input id="card" class="modal-form__input" type="text" name="card" placeholder="1234 5678 9012 3456 7890">
+              <ul class="card-menu">
+                <li class="card-menu__item">
+                  <a class="card-menu__link" href="#">Visa</a>
+                </li>
+                <li class="card-menu__item">
+                  <a class="card-menu__link" href="#">MasterCard</a>
+                </li>
+                <li class="card-menu__item">
+                  <a class="card-menu__link" href="#">Maestro</a>
+                </li>
+                <li class="card-menu__item">
+                  <a class="card-menu__link" href="#">American Express</a>
+                </li>
+              </ul>
+
+              <label for="valid-until">Срок истечения</label>
+              <div class="modal-form__block1">
+                <input id="valid-until" class="modal-form__input" type="text" name="valid-until" placeholder="04">
+                <input id="valid-until" class="modal-form__input" type="text" name="valid-until" placeholder="2019">
+              </div>
+              <label for="cvv">Срок истечения</label>
+              <input id="cvv" class="modal-form__input" type="text" name="cvv" placeholder="657">
+              <label for="card-name">Имя на карте</label>
+              <input id="card-name" class="modal-form__input" type="text" name="card-name" placeholder="Konstantin Naprimerniy">
+            </div>
+
+            <div class="modal-form__block">
+              <label for="mail">Электронная почта</label>
+              <input id="mail" class="modal-form__input" type="text" name="mail" placeholder="incorrectemail.address">
+              <p class="modal-form__text">Пожалуйста, введите корректный адрес электронной почты.</p>
+            </div>
+
+            <button class="btn  modal-form__btn" type="submit">Подтвердить 500&#8381; в месяц</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal-contacts">
+        <div class="modal-contacts__inner">
+          <h2 class="modal-contact__title">Свяжитесь с нами</h2>
+          <div class="contacts-block">
+            <h3 class="modal-contacts__title">Контактный телефон</h3>
+            <a class="modal-contacts__phone" href="tel:+78125691474">+7 (812) 569-14-74</a>
+            <p class="modal-contacts__text">Нажмите на номер, чтобы позвонить. Отвечаем стабильно с понедельника по воскресененье с 10:00 до 22:00.</p>
+          </div>
+          <div class="contacts-block">
+            <h3 class="modal-contacts__title">Электронная почта</h3>
+            <a class="modal-contacts__mail" href="mailto:inbox@nitdobra.fund">inbox@nitdobra.fund</a>
+            <p class="modal-contacts__text">Нажмите на адрес, чтобы отправить письмо. Отвечаем каждый день, время ответа не более трёх часов.</p>
+          </div>
+          <div class="contacts-block">
+            <h3 class="modal-contacts__title">Наш офис</h3>
+            <p class="modal-contacts__adress">Пространство «Welcome», Невский проспект,  48,  Санкт-Петербург, 194283</p>
+            <p class="modal-contacts__text">Офис открыт для посещения по будням с 10:00 до 19:00, по субботам с 10:00 до 18:00.</p>
+          </div>
+          <img class="modal-contacts__map" src="img/google-map.jpg" alt="Карта проезда" width="736" height="402">
+        </div>
+      </div>
+
     </div>
-    <script src="js/scripts.min.js"></script>
+
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
