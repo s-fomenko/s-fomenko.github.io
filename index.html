@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Фонд «Нить Добра»</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,700|PT+Serif&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,14 +12,9 @@
 
     <header class="page-header">
 
-
       <div class="page-header__inner">
         <img class="page-header__logo" src="img/page-header-logo.svg" alt="Логотип" width="51" height="30">
-        <nav class="main-navigation">
-          <div class="main-navigation__toggler">
-            <p class="main-navigation__toggler-text">Меню</p>
-            <span class="main-navigation__toggler-elem"></span>
-          </div>
+        <nav class="main-navigation  col-md-10  col-lg-11">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">Проекты</a>
@@ -28,7 +23,7 @@
               <a class="main-navigation__link" href="#">Волонтёрство</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">О фонде</a>
+              <a class="main-navigation__link" href="#">О&nbsp;фонде</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">Партнёры</a>
@@ -40,24 +35,11 @@
               <a class="main-navigation__link" href="#">Блог</a>
             </li>
           </ul>
+          <div class="main-navigation__toggler">
+            <p class="main-navigation__toggler-text">Меню</p>
+            <span class="main-navigation__toggler-elem"></span>
+          </div>
         </nav>
-      </div>
-
-      <div class="hero-section">
-        <div class="hero-section__inner">
-          <p class="page__sub-title  col-sm-3">Фонд «Нить Добра»</p>
-          <h1 class="page__title  col-sm-5">Поддерживаем детей вместе, чтобы они могли жить полноценно.</h1>
-          <p class="page__text col-sm-6">Оказываем поддержку онкобольным детям и подросткам, организуем работу волонтёров</p>
-          <p class="page__text  page__text--tablet">Оказываем психологическую поддержку онкобольным детям и подросткам и помогаем им вернуться в жизнь. Организуем работу волонтёров и продвигаем идею реабилитации в России.</p>
-          <form class="donate-form1" action="#" method="post">
-            <input class="donate-form1__input" type="text" name="amount" placeholder="100">
-            <select class="page-select" name="frequency">
-              <option class="page-select__item" value="monthly">Ежемесячно</option>
-              <option class="page-select__item" value="single">Разово</option>
-            </select>
-            <button class="btn  donate-form1__btn" type="submit">Пожертвовать</button>
-          </form>
-        </div>
       </div>
 
     </header>
@@ -65,28 +47,72 @@
 
     <main class="page-main">
 
-      <div class="video">
-        <div class="video__inner">
-          <!-- Два разных варианта вставки видео. Не знаю какой в данном случае лучше -->
-          <iframe width="288" height="150" src="https://www.youtube.com/embed/RDimtILZ3d0" frameborder="0" allowfullscreen></iframe>
-          <!-- <video class="video__clip" controls="controls" preload="metadata">
-            <source src="video/video.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
-            <source src="video/video.webm" type="video/webm; codecs="vp8, vorbis"">
-          </video> -->
-          <p class="video__text">Александр Солоковский рассказывает о фонде «Нить Добра» (2 минуты)</p>
+      <div class="hero-section">
+        <div class="hero-section__inner">
+          <p class="page__sub-title  col-sm-3 col-md-4  col-lg-3">Фонд «Нить Добра»</p>
+          <h1 class="page__title  col-sm-5 col-md-10  col-lg-8">Поддерживаем детей вместе, чтобы они могли жить полноценно.</h1>
+          <p class="page__text col-sm-6">Оказываем поддержку онкобольным детям и подросткам, организуем работу волонтёров</p>
+          <p class="page__text  page__text--tablet  col-md-12  col-lg-10">Оказываем психологическую поддержку онкобольным детям и подросткам и помогаем им вернуться в жизнь. Организуем работу волонтёров и продвигаем идею реабилитации в России.</p>
+          <form class="hero-form  col-md-11  col-lg-9" action="#" method="post">
+
+            <div class="hero-form__input--outer">
+              <input class="hero-form__input" type="text" name="amount" placeholder="100">
+            </div>
+
+            <div class="page-select">
+              <ul class="page-select__list">
+                <li class="page-select__item">
+                  <a class="page-select__link" href="#">Ежемесячно</a>
+                </li>
+                <li class="page-select__item">
+                  <a class="page-select__link  page-select__link--hidden" href="#">Разово</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn  hero-form__btn">Пожертвовать</button>
+          </form>
         </div>
+      </div>
+
+      <div class="video">
+
+        <div class="video__outer">
+          <img class="video__img" src="img/sokolovskiy.jpg" alt="Соколовский" width="100%" height="100%">
+        </div>
+
+        <div class="video__inner">
+
+          <div class="video__wrapper">
+            <picture>
+              <source srcset="img/video-poster-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/video-poster-desktop.png" media="(min-width: 1280px)">
+              <source srcset="img/video-poster.png">
+              <img class="video__poster" srcset="img/video-poster.png" alt="Соколовский" width="100%" height="100%">
+            </picture>
+
+            <video class="video__clip" preload="metadata">
+              <source src="video/video.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+              <source src="video/video.webm" type="video/webm; codecs="vp8, vorbis"">
+            </video>
+          </div>
+
+          <p class="video__text">Александр Соколовский рассказывает о фонде «Нить Добра» (2 минуты)</p>
+
+        </div>
+
       </div>
 
 
       <div class="rehabilitation">
         <div class="rehabilitation__inner">
-          <p class="page__sub-title">Реабилитация и психологическая поддержка</p>
-          <h2 class="page__title">Реабилитация — это важно. Cтоит написать большой красивый заголовок.</h2>
-          <p class="page__text">Поддерживаем детей во время лечения, чтобы они не теряли веру в себя и в своё будущее. Чтобы дети могли вернуться в жизнь после лечения, мы проводим мероприятия и исполняем их мечты.</p>
+          <p class="page__sub-title  page__sub-title--red  col-sm-4">Реабилитация и психологическая поддержка</p>
+          <h2 class="page__title  page__title--black  col-sm-6">Реабилитация — это важно. Cтоит написать большой красивый заголовок.</h2>
+          <p class="page__text  page__text--gray  col-sm-6">Поддерживаем детей во время лечения, чтобы они не теряли веру в себя и в своё будущее. Чтобы дети могли вернуться в жизнь после лечения, мы проводим мероприятия и исполняем их мечты.</p>
 
           <ul class="second-navigation">
             <li class="second-navigation__item">
-              <a href="#" class="second-navigation__link">Проекты</a>
+              <a href="#" class="second-navigation__link  second-navigation__link--active">Проекты</a>
             </li>
             <li class="second-navigation__item">
               <a href="#" class="second-navigation__link">Мероприятия</a>
@@ -98,32 +124,32 @@
 
           <section class="slider">
             <section class="slider__list">
-              <article class="card">
-                <img class="card__logo  card__logo--mobile" src="img/slider-logo-1-mobile.svg" alt="Заветная мечта" width="86" height="81">
+              <article class="card  card__bg-1  col-sm-6">
+                <img class="card__logo  card__logo--mobile" src="img/slider-logo-1-mobile.svg" alt="Заветная мечта" width="99" height="94">
                 <img class="card__logo" src="img/slider-logo-1.svg" alt="Заветная мечта" width="290" height="45">
                 <p class="card__text">Уникальная возможность для детей и подростков попробовать себя в профессии мечты.</p>
                 <a class="page__link" href="#">Смотреть проект</a>
               </article>
-              <article class="card">
-                <img class="card__logo" src="img/slider-logo-2.svg" alt="Козмас" width="160" height="57">
+              <article class="card   card__bg-2  col-sm-6">
+                <img class="card__logo  card__logo--mobile  card__logo--space" src="img/slider-logo-2.svg" alt="Козмас" width="160" height="95">
                 <p class="card__text">Первый в росcии благотворительный проект помощи онкобольным детям полететь в открытый космос.</p>
                 <a class="page__link" href="#">Смотреть проект</a>
               </article>
             </section>
             <section class="slider__list">
-              <article class="card">
+              <article class="card   card__bg-3  col-sm-6">
                 <p class="card__date">17 сентября</p>
-                <h3 class="card__title">Парижский вечер</h3>
+                <h3 class="card__title  col-sm-5">Парижский вечер</h3>
                 <p class="card__text">Окунёмся в атмосферу мягких французских булок и выпьем чаю. Специальными гостями будут какие-то французы.</p>
-                <a class="page__link" href="#">Записаться</a>
+                <a class="page__link  page__link--visible col-sm-3" href="#">Записаться</a>
               </article>
-              <article class="card">
+              <article class="card   card__bg-4  col-sm-6">
                 <p class="card__date">22 сентября</p>
-                <h3 class="card__title">Большой субботник во Всеволожске</h3>
+                <h3 class="card__title  col-sm-5">Большой субботник во Всеволожске</h3>
                 <p class="card__text">В эту субботу мы едем помогать ребятам из 31-й больницы Всеволожского района делать свой город чище.</p>
-                <a class="page__link" href="#">Записаться</a>
+                <a class="page__link  page__link--visible col-sm-3" href="#">Записаться</a>
               </article>
-              <article class="card">
+              <article class="card  card--hidden">
                 <p class="card__date">2 октября</p>
                 <h3 class="card__title">Вечер караоке</h3>
                 <p class="card__text">Каждый четверг наши ребята устраивают настоящий концерт! Готовьте тексты, у нас будет весело.</p>
@@ -147,6 +173,7 @@
                 <a class="page__link" href="#">Читать историю</a>
               </article>
             </section>
+            <a href="#" class="slider__link">Смотреть все проекты</a>
             <a href="#" class="slider__arrow slider__arrow--right"></a>
           </section>
         </div>
